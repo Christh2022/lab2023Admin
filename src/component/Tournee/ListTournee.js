@@ -116,10 +116,8 @@ const ListTournee = () => {
             alert("Suppression annulé");
         }
     }
-    
 
     const handleSave = async (id)=>{
-        //console.log(id);
         if(window.confirm("voulez-vous vraiment modifer cette date de tournée")){
             if(status === 0){
                 alert("vous ne pouvez pas modifier des éléments ici")
