@@ -1,0 +1,38 @@
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    gap: 1rem;
+}
+
+.row-col-xxl-4>* {
+    flex: 0 0 auto;
+    width: calc(25% - 15px);
+}
+
+@media (max-width: 1350px) {
+    .row-col-md-2>* {
+        flex: 0 0 auto;
+        width: calc(50% - 15px)
+    }
+}
+
+@media (max-width: 720px) {
+    .row>*{
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        margin-top: var(--bs-gutter-y);
+    }
+
+    .row-col-1>*{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+
+
+.signup h1{
+    text-align: center;
+    padding:  1rem 0 1.1rem 0;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.signup form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.signup form>:nth-child(4){
+    padding: 0;
+    font-size: 1rem;
+}
+
+.signup form>:nth-child(1)::placeholder,
+.signup form>:nth-child(2)::placeholder,
+.signup form>:nth-child(3)::placeholder{
+    font-size: 1rem;
+    font-weight: 200;
+    color: #333;
+}
+
+/* Style pour le bouton de sélection de fichier */
+.signup form>:nth-child(4)::-webkit-file-upload-button{
+    background: linear-gradient(to top, #101454, #4182a7);
+    height: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+.signup form>:nth-child(5){
+   background:  rgb(166, 171, 184);
+}
+
+@media (max-width: 400px) {
+    
+}

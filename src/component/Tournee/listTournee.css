@@ -1,0 +1,160 @@
+.row-list{
+    display: flex;
+    width: 100%;
+}
+.row-tournee{
+    flex-direction: row-reverse;
+}
+
+.col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+    position: relative;
+    left: -1%;
+}
+
+.list-card{
+    border-radius: 10px;
+    border: 0 solid transparent;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+}
+
+.card-body {
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+}
+
+.cardheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: calc(1.7rem + .3vw);
+    font-family: 'sans-serif'!important;
+    color: #4c5258;
+}
+
+.listTournee {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-inline-start: 0;
+}
+
+.listTournee tr{
+    list-style: none;
+    width: 100%;
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listTournee>*{
+    font-size: 0.8rem;
+    text-align: center;
+    color: #000;
+}
+
+
+.tourneeNumber{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    text-align: center;
+    border-top: var(--bs-border-width)  var(--bs-border-style) var(--bs-border-color)!important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem 0 1.6rem 0;
+}
+
+td, th{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 31%;
+}
+.row-form {
+    position: relative;
+    left: -0.3rem;
+    margin-bottom:  2rem;
+}
+
+.card-body form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-body form>*{
+    padding: 1rem;
+    width: 80%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    outline: none;
+    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+}
+
+
+.card-body form>:nth-child(1),
+.card-body form>:nth-child(2),
+.card-body form>:nth-child(3),
+.card-body form>:nth-child(4),
+.card-body form>:nth-child(5){
+    background: rgb(218 218 253 / 65%);
+}
+
+
+.card-body form>:nth-child(6){
+    background: linear-gradient(to top, #000, #a68989);
+    color: #ffffff;
+    text-transform: capitalize ;
+}
+
+.card-body form>*::placeholder{
+    color: #000;
+}
+
+
+/*.card-body form>input::-webkit-calendar-picker-indicator {
+    padding-left: 1rem;
+}*/
+
+
+@media (min-width: 1300px) {
+    .row-form {
+        left: -1.5rem;
+    }
+}
+
+
+
+@media (max-width: 992px){
+    .col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        left: 0;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 724px){
+    .col-12 {
+        width: 100%;
+        left: 0;
+    }
+
+    .listTournee tr{
+        padding: 1rem 0zrem;
+    }
+}
